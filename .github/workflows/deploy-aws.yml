@@ -20,7 +20,7 @@ jobs:
       - name: npm install & build
         run: |
           npm install
-          ionic build
+          npm run build
       
       - name: S3 deploy aws
         uses: sai-sharan/aws-s3-sync-action@v0.1.0
