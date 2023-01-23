@@ -26,7 +26,7 @@ jobs:
         uses: sai-sharan/aws-s3-sync-action@v0.1.0
         with:
           access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
           region: 'eu-central-1'
           source: 'www'
           destination_bucket: ${{ secrets.AWS_S3_BUCKET }}
